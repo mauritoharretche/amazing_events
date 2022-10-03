@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/*  estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Monserrat' , sans-serif !important;
+    overflow-x: hidden !important;
+}
+
+.size_card_detail{
+    height: 400px !important;
+}
+
+
+/* ==========MEDIA QUERIES=========== */
+
+@media only screen and (min-width: 1200px) {
+    .carousel-inner{
+        height:auto !important;
+    }
+    
+}
+
+@media  (max-width:768px) {
+    .carousel-inner{
+        height:auto !important;
+    }
+}
+
+@media  screen and (max-width:450px) {
+    .section{
+        justify-content: center;
+        align-items: center;
+    }
+}
