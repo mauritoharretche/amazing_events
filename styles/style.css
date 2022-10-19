@@ -32,6 +32,9 @@ body{
     .carousel-inner{
         height:auto !important;
     }
+    .section{
+        align-items: center;
+    }
 }
 
 @media  screen and (max-width:450px) {
