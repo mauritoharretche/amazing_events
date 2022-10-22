@@ -23,14 +23,14 @@ body{
 
 @media only screen and (min-width: 1200px) {
     .carousel-inner{
-        height:auto !important;
+        height:10em !important;
     }
     
 }
 
 @media  (max-width:768px) {
     .carousel-inner{
-        height:auto !important;
+        height:10em !important;
     }
     .section{
         align-items: center;
