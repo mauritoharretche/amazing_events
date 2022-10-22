@@ -15,9 +15,13 @@ body{
 }
 
 .size_card_detail{
-    height: 400px !important;
+    height: 450px !important;
 }
 
+.active{
+    color: darkred !important;
+    background-color: white !important;
+}
 
 /* ==========MEDIA QUERIES=========== */
 
