@@ -55,6 +55,12 @@ getJsonEvents()
 
 // filtering data & mapping
 
+
+
+
+
+
+
 //filtering checkbox
 
 function createCheck(arrayCategories) {
