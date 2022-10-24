@@ -18,10 +18,10 @@ async function apiGetEvents(){
   let eventsFull = apiGet.events
 
 
-let locationId = location.search.slice(4)
+  let locationId = location.search.slice(4)
 
 
-let eventFiltered =  eventsFull.find(apiGet => apiGet._id == locationId)
+  let eventFiltered =  eventsFull.find(apiGet => apiGet._id == locationId)
 
 
 cardsDetails(eventFiltered)

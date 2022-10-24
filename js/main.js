@@ -7,7 +7,7 @@ const containerCheckbox = document.getElementById("checkbox_container")//
 
 async function getJsonEvents(){
   try{
-    var eventsApiJson = await fetch('https://amazing-events.herokuapp.com/api/events')
+    var eventsApiJson = await fetch('https://mind-hub.up.railway.app/amazing')
     eventsApiJson = await eventsApiJson.json()
   }catch(error){
     console.log(error)
