@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amazing Events-Stats</title>
   <link rel="shortcut icon" href="../images/logoamazingevents.png" type="image/x-icon">
-  <link rel="stylesheet" href="./styles/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body class="full-container" style="min-height: 100vh;">
+<body class="full-container">
   <!-- header -->
   <header style="height: 15vh mb-auto;">
     <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark p-3">
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-3">
             <li class="nav-item">
-              <a class="nav-link active text-light border border-danger badge rounded-pill border-3 fs-5 fw-bold text-capitalize"
+              <a class="nav-link text-light border border-danger badge rounded-pill border-3 fs-5 fw-bold text-capitalize"
                 aria-current="page" href="../index.html">home</a>
             </li>
             <li class="nav-item">
@@ -42,8 +42,8 @@
                 href="./contact.html">contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light border border-danger badge rounded-pill border-3 fs-5 fw-bold text-capitalize"
-                href="./stats.html">stats</a>
+              <a id="active" class="nav-link border border-danger badge rounded-pill border-3 fs-5 fw-bold text-capitalize"
+                href="#">stats</a>
             </li>
           </ul>
         </div>
@@ -52,124 +52,54 @@
   </header>
 
   <!-- main -->
-  <main class="bg-dark container-m " style="height:70.2vh;">
-    <table class="table table-bordered bg-danger container">
-      <thead>
-        <tr>
-          <th class="text-light text-capitalize fs-3 fw-bold" colspan="3">events statistics</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold">events with the hightest percentage of attendance</td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">events with the lowest percentage off attendance
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">event with larger capacity
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <table class="table table-bordered bg-danger container">
-      <thead>
-        <tr>
-          <th class="text-light text-capitalize fs-3 fw-bold" colspan="3">upcoming events statistics</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold">categories</td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">revenues
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">percentage of attendance
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <table class="table table-bordered bg-danger container">
-      <thead>
-        <tr>
-          <th class="text-light text-capitalize fs-3 fw-bold" colspan="3">past events statistics</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold">categories</td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">revenues
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">percentage of attendance
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-        <tr>
-          <td class="text-light text-capitalize fs-6 fw-semibold"></td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-          <td class="text-light text-capitalize fs-6 fw-semibold">
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
+  <main class="bg-dark container-m mainStats" >
+    <div class="container-fluid d-flex justify-content-center align-items-center cont_table px-3">
+      <table class="table table-bordered bg-dark text-danger table_resp">
+          <thead>
+            <tr>
+              <th  colspan=3 scope="col">Event statictis</th>
+            </tr>
+          </thead>
+          <tbody id="table1" >
+            <tr>
+              <td>Event with the highest porcentage of attendance</td>
+              <td>Event with the lowest porcentage of attendance</td>
+              <td>Event with larger capacity</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th  colspan=3 scope="col">Upcomig events statictis by category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Categories</td>
+              <td>Revenues</td>
+              <td>Percentage of attendance</td>
+            </tr>
+          </tbody>
+          <tbody id="table2">
+          </tbody>
+          <thead>
+            <tr>
+              <th  colspan=3 scope="col">Past events statictis by category</th>
+            </tr>
+          </thead>
+          <tbody id="table3">
+            <tr>
+              <td>Categories</td>
+              <td>Revenues</td>
+              <td>Percentage of attendance</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
 
   </main>
 
   <!-- Footer -->
-  <footer class="text-center text-lg-start bg-danger text-muted" style="height: 20vh;">
+  <footer class="text-center text-lg-start bg-danger text-muted footerStats">
     <section class="d-flex justify-content-between justify-content-lg-between py-4 px-4 text-light">
       <div>
         <a href="#" class="p-4 text-reset">
@@ -201,6 +131,7 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/936d7c79ce.js" crossorigin="anonymous"></script>
+  <script src="../js/stats.js"></script>
 </body>
 
 </html>
