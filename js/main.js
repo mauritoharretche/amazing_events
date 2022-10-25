@@ -75,7 +75,7 @@ function filteringCardsForSearch(array, textoDeBusqueda) {
   let cardsFiltradasPorBusqueda = array.filter(event => event.name.toLowerCase().includes(textoDeBusqueda.toLowerCase()));
   if (cardsFiltradasPorBusqueda.length === 0) {
     searchNull()
-    return [] 
+    return []
   }
   return cardsFiltradasPorBusqueda
 }
@@ -105,7 +105,7 @@ function searchNull() {
 function createCard(array) {
   contenedor.innerHTML += `
   <div class="card" style="width: 18rem;">
-  <img src="${array.image}" class="card-img-top mx-auto p-3 shadow p-3 mb-3 bg-body rounded"
+  <img src="${array.image}" class="card-img-top mx-auto p-3 shadow p-3 mb-3 bg-body rounded img-fluid"
   style="width: 270px;" alt="music">
   <div class="card-body text-center">
   <h5 class="card-title">${array.name}</h5>

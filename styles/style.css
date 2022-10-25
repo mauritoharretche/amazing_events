@@ -42,6 +42,21 @@ body{
 }
 
 
+.carousel_height{
+    height: 250px;
+}
+
+
+.img_carrousel{
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+
 /* ==========MEDIA QUERIES=========== */
 
 @media only screen and (min-width: 1200px) {
