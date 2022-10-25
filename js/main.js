@@ -7,12 +7,12 @@ const containerCheckbox = document.getElementById("checkbox_container")//
 
 async function getJsonEvents(){
   try{
-    var eventsApiJson = await fetch('https://mind-hub.up.railway.app/amazing')
+    var eventsApiJson = await fetch('https://mh-amazing.herokuapp.com/amazing')
     eventsApiJson = await eventsApiJson.json()
   }catch(error){
     console.log(error)
   }
-  const date = eventsApiJson.currentDate
+  const date = eventsApiJson.date
   const card = eventsApiJson.events
 
   const homeCards = card.filter(() => title.text.includes("HOME"))
@@ -99,7 +99,7 @@ function createCard(array) {
   </div>
   <div class="card-body d-flex justify-content-around ">
   <span href="#" class="card-link">Price $${array.price}</span>
-  <a href="../pages/details.html?id=${array._id}" class="btn btn-danger">View more</a>
+  <a href="../../pages/details.html?id=${array.id}" class="btn btn-danger">View more</a>
   </div>
   </div>
   `;
