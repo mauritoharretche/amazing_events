@@ -18,17 +18,27 @@ body{
     height: 450px !important;
 }
 
-.active{
-    color: darkred !important;
-    background-color: white !important;
-}
+
 
 .mainStats{
-    min-height: auto;
+    min-height: 70vh;
 }
 
 .footerStats{
     min-height: 15vh;
+}
+
+.cont_table{
+    padding: 5% 0;
+}
+
+.table_resp{
+    width: 100%;
+}
+
+#active{
+    color: rgba(255, 0, 0, 0.568);
+    background-color: white;
 }
 
 
@@ -36,17 +46,21 @@ body{
 
 @media only screen and (min-width: 1200px) {
     .carousel-inner{
-        height:10em !important;
+        height:auto !important;
     }
     
 }
 
 @media  (max-width:768px) {
     .carousel-inner{
-        height:10em !important;
+        height:auto !important;
     }
     .section{
         align-items: center;
+    }
+    .table_resp{
+        margin: 2px;
+        font-size: small;
     }
 }
 

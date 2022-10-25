@@ -99,7 +99,7 @@ function createCard(array) {
   </div>
   <div class="card-body d-flex justify-content-around ">
   <span href="#" class="card-link">Price $${array.price}</span>
-  <a href="../../pages/details.html?id=${array.id}" class="btn btn-danger">View more</a>
+  <a href="./pages/details.html?id=${array.id}" class="btn btn-danger">View more</a>
   </div>
   </div>
   `;
