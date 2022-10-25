@@ -80,10 +80,24 @@ function filteringCardsForSearch(array, textoDeBusqueda) {
   return cardsFiltradasPorBusqueda
 }
 
+let url 
+if(title.text.includes('HOME')){
+  url = {
+    details: './pages/details.html',
+    imgError: './images/404-error-page-found.jpg',
+  }
+}else{
+  url = {
+    details: './details.html',
+    imgError: '../images/404-error-page-found.jpg',
+  }
+}
+
 function searchNull() {
   contenedor.innerHTML = `
   <article class="container-fluid d-flex justify-content-center align-items-center row col-12">
     <h1 class="text-center text-white">Lo sentimos, busqueda invalida</h1>
+    <div><img class="img-fluid" src="${url.error404}" alt="error" width="350px"></div>
   </article>
   `;
 }
