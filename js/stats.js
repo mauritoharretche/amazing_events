@@ -40,7 +40,6 @@ async function getEventsApi(){
 
     let filterCategory = new Set(pastEvents.map(event => event.category))
     filterCategory = [...filterCategory]
-    console.log(filterCategory);
 
     
     let dateCategory = [...new Set (fullEvents.map(event => event.category))]
